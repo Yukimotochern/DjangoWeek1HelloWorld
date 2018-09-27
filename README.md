@@ -30,10 +30,10 @@ Week 1
     2. [這是陳智圓的專案](https://weihelloworldtest2.herokuapp.com/)
 
 Week 2  
-    * In class  
-        i.  Learn Html (Codecademy)  
-    * At Home  
-        i. Copy the TA's example
-        ii. Try a little bit CSS and Html
-    * Homework  
-        [這是陳智圓的專案](https://weihelloworldtest2.herokuapp.com/)
+  * In class  
+    i.  Learn Html (Codecademy)  
+  * At Home  
+    i. Copy the TA's example
+    ii. Try a little bit CSS and Html
+  * Homework  
+    [這是陳智圓的專案](https://weihelloworldtest2.herokuapp.com/)
