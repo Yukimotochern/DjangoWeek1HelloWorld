@@ -17,7 +17,6 @@ html, body {
 
     .center{
         position:relative;
-        top:50px;
         /*left:350px;*/
         width: 800px;
         display: block;
@@ -36,6 +35,7 @@ html, body {
     h2{
         font-size: 20px;
         width: 800px;
+        margin: 0 auto;
         display: block;
     }
 
