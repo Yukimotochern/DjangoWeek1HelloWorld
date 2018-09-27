@@ -4,28 +4,39 @@ html, body {
     }
     
 
-    /*div{
+    div{
         background-color: #FFF;
     }
-*/
     
 
-    #ta {
+    #author {
         /*color:red;*/
-        font-size: 110%;
-        text-indent: 100px;
+        font-size: 80%;
         text-align: center;
+    }
+
+    .center{
+        position:relative;
+        top:50px;
+        /*left:350px;*/
+        width: 800px;
+        display: block;
+        margin: 0 auto;
     }
 
     #ps{
         color:red;
     }
 
-    h1,h2{
-        font-size: 20px;
+    h1{
+        font-size: 30px;
         text-align: center;
     }
 
+    h2{
+        font-size: 20px;
+        text-align: center;
+    }
 
     #container {
         top: 50px;
