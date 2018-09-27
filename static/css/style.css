@@ -2,8 +2,6 @@ html, body {
         padding: 0;
         margin: 0;
     }
-    
-
     div{
         background-color: #FFF;
     }
@@ -30,6 +28,8 @@ html, body {
     h1{
         font-size: 30px;
         text-align: center;
+        color: #FFF;
+        color: rgba(255, 255, 255, 0.5);
     }
 
     h2{
