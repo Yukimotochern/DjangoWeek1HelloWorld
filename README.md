@@ -43,4 +43,4 @@ Week 3
     i. Learn Python
   * At Home  
     i. Try to use template
-    ii. Learn on Udemy
+    ii. Learn on Udemy~~
