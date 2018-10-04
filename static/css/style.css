@@ -4,6 +4,7 @@ html, body {
     }
     div{
         background-color: #FFF;
+        margin:0px auto;
     }
     
 
@@ -111,4 +112,16 @@ html, body {
         color: darkred;
         content: " ]   : ";
         size: 100%;
+    }
+
+    .grid {
+        margin:0px auto;
+        width: 800px;
+        display: grid;
+        grid-template-columns: 25% 25% 25% 25%;
+        grid-template-rows: 20% 20% 20% 20%;
+    }
+
+    .box {
+
     }

@@ -8,8 +8,13 @@
     <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
 </head>
 <body>
-    <h1>Group Task Manager</h1>
+    <h1>請用 Google Chrome 來看，Safari 似乎還不支援 grid</h1>
     <p id="author">yukimoto<br></p>
+    <div class="grid">
+        {% for n in random_list %}
+            <div class="box"><img src='https://picsum.photos/200/200?image={{n}}' alt="{{n}}th picture"></div>
+        {% endfor %}
+    </div>
     <h2>Features To Realize</h2>
     <div class="center">
         <p>Basic Units</p>
