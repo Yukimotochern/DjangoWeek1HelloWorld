@@ -44,3 +44,10 @@ Week 3
   * At Home  
     i. Try to use template
     ii. Learn on Udemy~~
+    
+Week 4  
+  * In class  
+    i. Complete Homework
+  * At Home  
+    i. 
+    

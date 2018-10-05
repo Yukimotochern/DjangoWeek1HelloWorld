@@ -33,14 +33,12 @@
     </div>
     <div id="container">
         <div id="content">
-            <div class="msg">
-                <span class="name">Pecu</span>
-                Hello,Class!
-            </div>
-            <div class="msg">
-                <span class="name">Michael</span>
-                Hello,Pecu.
-            </div>
+            {% for mm in m %}
+                <div class="msg">
+                    <span class="name">{{mm.talker}}</span>
+                    {{mm.message}}
+                </div>
+            {% endfor %}
         </div>
         <div id="send-box">
             <form id="send-form">
