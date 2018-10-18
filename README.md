@@ -51,3 +51,10 @@ Week 4
   * At Home  
     i. 
     
+Week 5
+  * In class  
+    i. Try to setup PostgresSQL
+  * At Home  
+    i. Set up a new computer  
+    ii. Get SQL and Homework done
+    
