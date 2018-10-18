@@ -1,0 +1,20 @@
+{% load staticfiles %}
+
+<!DOCTYPE html>
+
+<html lang="zh">
+{% load  staticfiles %}
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>Group Task Manager</title>
+    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
+</head>
+<body>
+{% include "header.html" %}
+        {% block main_content %}
+        {% endblock %}
+{% include "footer.html" %}
+</body>
+
+</html>

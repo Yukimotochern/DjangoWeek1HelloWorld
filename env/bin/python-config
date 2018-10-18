@@ -1,4 +1,4 @@
-#!/Users/yukimoto/DjangoWeek1HelloWorld/env/bin/python
+#!/Users/yukimoto/Dropbox/Python/DjangoClass/env/bin/python
 
 import sys
 import getopt

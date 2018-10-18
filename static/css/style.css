@@ -39,7 +39,6 @@ html, body {
     }
 
     #container {
-        top: 50px;
         width: 800px;
         /*height: auto;*/
         margin: 0 auto;

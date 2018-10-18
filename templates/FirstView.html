@@ -1,20 +1,10 @@
-<!DOCTYPE html>
-<html lang="zh">
-{% load  staticfiles %}
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <title>Group Task Manager</title>
-    <link href="{% static 'css/style.css' %}" rel="stylesheet" type="text/css" />
-</head>
-<body>
-    <h1>請用 Google Chrome 來看，Safari 似乎還不支援 grid</h1>
+
+{% extends 'base.html' %}
+{% block main_content %}
+    <h1>To Know</h1>
     <p id="author">yukimoto<br></p>
-    <div class="grid">
-        {% for n in random_list %}
-            <div class="box"><img src='https://picsum.photos/200/200?image={{n}}' alt="{{n}}th picture"></div>
-        {% endfor %}
-    </div>
+
+    <a href="{% url 'fake' %}"><h2>Click Me</h2></a>
     <h2>Features To Realize</h2>
     <div class="center">
         <p>Basic Units</p>
@@ -31,7 +21,7 @@
             <li>Stage and Status</li>
         </ul>
     </div>
-    <div id="container">
+    <div id="container" class="">
         <div id="content">
             {% for mm in m %}
                 <div class="msg">
@@ -41,14 +31,14 @@
             {% endfor %}
         </div>
         <div id="send-box">
-            <form id="send-form">
+            <form id="send-form" action="{% url 'talkto' %}" method="post">
+                {% csrf_token %}
                 <input type="text" name="name" id="name" placeholder="暱稱">
                 <input type="text" name="msg" id="msg" placeholder="說點什麼？">
                 <input type="submit" id="submit" value="送出">
             </form>
         </div>
     </div>
-</body>
+{% endblock %}
 
-</html>
 
