@@ -58,3 +58,9 @@ Week 5
     i. Set up a new computer  
     ii. Get SQL and Homework done
     
+Week 6
+  * In class  
+    i. Try to setup Default Django Auth
+  * At Home  
+    i. Set up customized model that extends user   
+    

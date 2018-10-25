@@ -3,24 +3,19 @@
 {% block main_content %}
     <h1>To Know</h1>
     <p id="author">yukimoto<br></p>
-
-    <a href="{% url 'fake' %}"><h2>Click Me</h2></a>
-    <h2>Features To Realize</h2>
     <div class="center">
-        <p>Basic Units</p>
-        <ul>
-            <li>Task</li>
-            <li>Container</li>
-        </ul>
-        <p>Sorting Ways</p>
-        <ul>
-            <li>Tags</li>
-            <li>Place</li>
-            <li>People</li>
-            <li>Time (defer, due, any)</li>
-            <li>Stage and Status</li>
-        </ul>
+        {% if user.is_authenticated %}
+            <h3>Hi, <strong>{{ user.username }}</strong> </h3>
+            <p>
+            <p><a href="{% url 'logout' %}">Log out</a></p>
+        {% else %}
+            <p><a href="{% url 'signup' %}">Sign Up</a></p>
+            <p><a href="{% url 'login' %}">Log In </a></p>
+        {% endif %}
     </div>
+    <a href="{% url 'fake' %}"><h2>Click Me</h2></a>
+    </div>
+    <br>
     <div id="container" class="">
         <div id="content">
             {% for mm in m %}
@@ -37,6 +32,7 @@
                 <input type="text" name="msg" id="msg" placeholder="說點什麼？">
                 <input type="submit" id="submit" value="送出">
             </form>
+            <p>沒填寫暱稱就會是帳號喔</p>
         </div>
     </div>
 {% endblock %}

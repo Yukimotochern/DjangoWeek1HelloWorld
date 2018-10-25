@@ -16,7 +16,11 @@ def index(request):
 
 
 def talkto(request):
-    t = TM.objects.create(talker=request.POST['name'], message=request.POST['msg'])
+    if request.POST['name'] == "":
+        t = TM.objects.create(talker=request.user.username, message=request.POST['msg'])
+    else:
+        t = TM.objects.create(talker=request.POST['name'], message=request.POST['msg'])
+
     m = TM.objects.all()
     return render(request, 'FirstView.html', locals())
 
