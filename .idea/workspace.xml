@@ -1,17 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="43b191e0-d729-4c1a-bd98-1d2c776eb1d4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/templates/registration/login.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/templates/signup.html" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/forms.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/users/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld/settings.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/settings.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/urls.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/helloworld/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/helloworld/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/templates/FirstView.html" beforeDir="false" afterPath="$PROJECT_DIR$/templates/FirstView.html" afterDir="false" />
-    </list>
+    <list default="true" id="43b191e0-d729-4c1a-bd98-1d2c776eb1d4" name="Default Changelist" comment="Week 6 GO~~" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -78,15 +68,17 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="html" value="600" />
+          <entry key="html" value="607" />
+          <entry key="md" value="64" />
           <entry key="py" value="423" />
-          <entry key="txt" value="15" />
+          <entry key="txt" value="21" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="HTML" value="600" />
-          <entry key="PLAIN_TEXT" value="15" />
+          <entry key="HTML" value="607" />
+          <entry key="Markdown" value="64" />
+          <entry key="PLAIN_TEXT" value="21" />
           <entry key="Python" value="423" />
         </counts>
       </usages-collector>
@@ -94,6 +86,7 @@
         <counts>
           <entry key="css" value="1" />
           <entry key="html" value="7" />
+          <entry key="md" value="1" />
           <entry key="py" value="13" />
         </counts>
       </usages-collector>
@@ -101,6 +94,7 @@
         <counts>
           <entry key="CSS" value="1" />
           <entry key="HTML" value="7" />
+          <entry key="Markdown" value="1" />
           <entry key="Python" value="13" />
         </counts>
       </usages-collector>
@@ -133,22 +127,10 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/users/forms.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="225">
-              <caret line="15" column="43" selection-start-line="15" selection-start-column="43" selection-end-line="15" selection-end-column="43" />
-              <folding>
-                <element signature="e#17#41#0" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/helloworld/views.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="330">
-              <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+              <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
               <folding>
                 <element signature="e#0#63#0" expanded="true" />
               </folding>
@@ -171,8 +153,20 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/templates/FirstView.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
+            <state relative-caret-position="255">
+              <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/README.md">
+          <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+            <state split_layout="SPLIT">
+              <first_editor relative-caret-position="527">
+                <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+              </first_editor>
+              <second_editor />
             </state>
           </provider>
         </entry>
@@ -236,7 +230,6 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/README.md" />
         <option value="$PROJECT_DIR$/guestbook/models.py" />
         <option value="$PROJECT_DIR$/templates/base.html" />
         <option value="$PROJECT_DIR$/static/css/style.css" />
@@ -252,8 +245,9 @@
         <option value="$PROJECT_DIR$/users/urls.py" />
         <option value="$PROJECT_DIR$/users/views.py" />
         <option value="$PROJECT_DIR$/helloworld/urls.py" />
-        <option value="$PROJECT_DIR$/templates/FirstView.html" />
         <option value="$PROJECT_DIR$/helloworld/views.py" />
+        <option value="$PROJECT_DIR$/templates/FirstView.html" />
+        <option value="$PROJECT_DIR$/README.md" />
       </list>
     </option>
   </component>
@@ -307,6 +301,12 @@
               <item name="DjangoClass" type="b2602c69:ProjectViewProjectNode" />
               <item name="DjangoClass" type="462c0819:PsiDirectoryNode" />
               <item name="users" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="DjangoClass" type="b2602c69:ProjectViewProjectNode" />
+              <item name="DjangoClass" type="462c0819:PsiDirectoryNode" />
+              <item name="users" type="462c0819:PsiDirectoryNode" />
+              <item name="migrations" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="DjangoClass" type="b2602c69:ProjectViewProjectNode" />
@@ -459,7 +459,14 @@
       <option name="project" value="LOCAL" />
       <updated>1540478931110</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Week 6 GO~~">
+      <created>1540480755227</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1540480755227</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="TodoView">
@@ -473,9 +480,8 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1680" height="1050" extended-state="0" />
-    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.12658228" />
+      <window_info content_ui="combo" id="Project" order="0" sideWeight="0.49863014" visible="true" weight="0.12658228" />
       <window_info id="Structure" order="1" sideWeight="0.50136983" side_tool="true" weight="0.1858618" />
       <window_info id="Favorites" order="2" sideWeight="0.50136983" side_tool="true" weight="0.1858618" />
       <window_info anchor="bottom" id="Message" order="0" />
@@ -487,7 +493,7 @@
       <window_info anchor="bottom" id="Python Console" order="6" weight="0.32554746" />
       <window_info anchor="bottom" id="TODO" order="7" weight="0.32862645" />
       <window_info anchor="bottom" id="Version Control" order="8" weight="0.3265306" />
-      <window_info anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2510204" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="9" visible="true" weight="0.2510204" />
       <window_info anchor="bottom" id="Event Log" order="10" side_tool="true" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
@@ -529,23 +535,14 @@
     <MESSAGE value="11change" />
     <MESSAGE value="Database Connection" />
     <MESSAGE value="Reset to Week 5" />
-    <option name="LAST_COMMIT_MESSAGE" value="Reset to Week 5" />
+    <MESSAGE value="Week 6 GO~~" />
+    <option name="LAST_COMMIT_MESSAGE" value="Week 6 GO~~" />
   </component>
   <component name="editorHistoryManager">
     <entry file="file://$PROJECT_DIR$/env/lib/python3.6/site-packages/django/shortcuts.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="170">
           <caret line="30" column="4" selection-start-line="30" selection-start-column="4" selection-end-line="30" selection-end-column="4" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
-      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
-        <state split_layout="SPLIT">
-          <first_editor relative-caret-position="765">
-            <caret line="51" column="7" selection-start-line="51" selection-start-column="7" selection-end-line="51" selection-end-column="7" />
-          </first_editor>
-          <second_editor />
         </state>
       </provider>
     </entry>
@@ -694,20 +691,30 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/templates/FirstView.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="48" column="24" lean-forward="true" selection-start-line="48" selection-start-column="24" selection-end-line="48" selection-end-column="24" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/helloworld/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="330">
-          <caret line="22" column="4" lean-forward="true" selection-start-line="22" selection-start-column="4" selection-end-line="22" selection-end-column="4" />
+          <caret line="22" lean-forward="true" selection-start-line="22" selection-end-line="22" />
           <folding>
             <element signature="e#0#63#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/templates/FirstView.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="17" column="8" lean-forward="true" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="split-provider[text-editor;markdown-preview-editor]">
+        <state split_layout="SPLIT">
+          <first_editor relative-caret-position="527">
+            <caret line="55" column="31" lean-forward="true" selection-start-line="55" selection-start-column="31" selection-end-line="55" selection-end-column="31" />
+          </first_editor>
+          <second_editor />
         </state>
       </provider>
     </entry>
