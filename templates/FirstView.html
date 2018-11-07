@@ -1,22 +1,20 @@
 
 {% extends 'base.html' %}
 {% block main_content %}
-    <h1>To Know</h1>
-    <p id="author">yukimoto<br></p>
-    <div class="center">
+    <div class="center container">
         {% if user.is_authenticated %}
-            <h3>Hi, <strong>{{ user.username }}</strong> </h3>
-            <p>
-            <p><a href="{% url 'logout' %}">Log out</a></p>
+            <h2>Hi, <strong>{{ user.username }}</strong> </h2>
+            <br>
+            <a class="btn btn-success account" href="{% url 'logout' %}">登出</a>
         {% else %}
-            <p><a href="{% url 'signup' %}">Sign Up</a></p>
-            <p><a href="{% url 'login' %}">Log In </a></p>
+            <h2>Hi, <strong>親愛的訪客</strong> </h2>
+            <br>
+            <a class="btn btn-success account" href="{% url 'signup' %}" style="text-decoration: none">註冊</a>
+            <a class="btn btn-success account" href="{% url 'login' %}" style="text-decoration: none">登入</a>
         {% endif %}
     </div>
-    <a href="{% url 'fake' %}"><h2>Click Me</h2></a>
-    </div>
     <br>
-    <div id="container" class="">
+    <div id="container group-list" class="">
         <div id="content">
             {% for mm in m %}
                 <div class="msg">

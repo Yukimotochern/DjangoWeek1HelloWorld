@@ -24,6 +24,7 @@ urlpatterns = [
     path('users/', include('users.urls')), # new
     path('users/', include('django.contrib.auth.urls')), # new
     url(r'^talkto$', views.talkto, name="talkto"),
-    url(r'^fake/$', views.fake, name="fake"),
     url(r'^back/$', views.back, name="back"),
+    url(r'^concept/$', views.createpage, name="createpage"),
+    url(r'^learn/$', views.learn, name="learn"),
 ]

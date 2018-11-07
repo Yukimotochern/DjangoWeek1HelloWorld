@@ -25,13 +25,20 @@ def talkto(request):
     return render(request, 'FirstView.html', locals())
 
 
-def fake(request):
-    return render(request, 'fake.html')
-
-
 def back(request):
     #
     # t = TM.objects.create(talker="someone", message=str(datetime.datetime.now()))
     #
     m = TM.objects.all()
     return render(request, 'FirstView.html', locals())
+
+
+def learn(request):
+    return render(request, 'learn.html', locals())
+
+
+def createpage(request):
+    return render(request, 'createpage.html', locals())
+
+
+
