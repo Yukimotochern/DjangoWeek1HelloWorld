@@ -27,4 +27,8 @@ urlpatterns = [
     url(r'^back/$', views.back, name="back"),
     url(r'^concept/$', views.createpage, name="createpage"),
     url(r'^learn/$', views.learn, name="learn"),
+    url(r'^concept/newconcept/$', views.newconcept, name="newconcept"),
+    url(r'^concept/(?P<concept_id>[0-9]+)/delete$', views.deleteconcept, name="deleteconcept"),
+    url(r'^concept/(?P<concept_id>[0-9]+)/edit$', views.editconcept, name="editconcept"),
+    url(r'^concept/(?P<concept_id>[0-9]+)/edit_act$', views.editconcept_act, name="editconcept_act"),
 ]

@@ -14,26 +14,6 @@
             <a class="btn btn-success account" href="{% url 'login' %}" style="text-decoration: none">登入</a>
         {% endif %}
     </div>
-    <br>
-    <div id="container group-list" class="">
-        <div id="content">
-            {% for mm in m %}
-                <div class="msg">
-                    <span class="name">{{mm.talker}}</span>
-                    {{mm.message}}
-                </div>
-            {% endfor %}
-        </div>
-        <div id="send-box">
-            <form id="send-form" action="{% url 'talkto' %}" method="post">
-                {% csrf_token %}
-                <input type="text" name="name" id="name" placeholder="暱稱">
-                <input type="text" name="msg" id="msg" placeholder="說點什麼？">
-                <input type="submit" id="submit" value="送出">
-            </form>
-            <p>沒填寫暱稱就會是帳號喔</p>
-        </div>
-    </div>
 {% endblock %}
 
 

@@ -5,7 +5,7 @@ from django.http import HttpResponse
 from django.contrib.auth.models import User
 import random, datetime
 from guestbook.models import TM
-
+from guestbook.models import Relation, RelationEntry, Concept
 
 def index(request):
     #
@@ -38,7 +38,53 @@ def learn(request):
 
 
 def createpage(request):
+    concept = Concept.objects.all()
+    relation = Relation.objects.all()
+    relation_entry = RelationEntry.objects.all()
     return render(request, 'createpage.html', locals())
+
+
+def newconcept(request):
+    dd = Concept.objects.create(title=request.POST["newtitle"], content=request.POST["newcontent"])
+    concept = Concept.objects.all()
+    relation = Relation.objects.all()
+    relation_entry = RelationEntry.objects.all()
+    return render(request, 'createpage.html', locals())
+
+
+def deleteconcept(request, concept_id):
+    try:
+        to_delete = Concept.objects.get(id=concept_id)
+        to_delete.delete()
+    except:
+        pass
+    concept = Concept.objects.all()
+    relation = Relation.objects.all()
+    relation_entry = RelationEntry.objects.all()
+    return render(request, 'createpage.html', locals())
+
+
+def editconcept(request, concept_id):
+    edit_id = concept_id
+    concept = sorted(Concept.objects.all(), key=id)
+    relation = Relation.objects.all()
+    relation_entry = RelationEntry.objects.all()
+    return render(request, 'createpage.html', locals())
+
+
+def editconcept_act(request, concept_id):
+    try:
+        to_edit = Concept.objects.get(id=concept_id)
+        to_edit.title = request.POST["newtitle"]
+        to_edit.content = request.POST["newcontent"]
+        to_edit.save()
+    except:
+        pass
+    concept = sorted(Concept.objects.all(), key=id)
+    relation = Relation.objects.all()
+    relation_entry = RelationEntry.objects.all()
+    return render(request, 'createpage.html', locals())
+
 
 
 

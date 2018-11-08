@@ -12,3 +12,30 @@ class TM(models.Model):
         return self.talker + " " + self.message
 
 
+class Concept(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=20)
+    content = models.TextField()
+
+
+class Relation(models.Model):
+    id = models.AutoField(primary_key=True)
+    title = models.CharField(max_length=20)
+    content = models.TextField()
+    is_sym = models.BooleanField
+
+
+class RelationEntry(models.Model):
+    id = models.AutoField(primary_key=True)
+    relation_main = models.ForeignKey(Relation, on_delete=models.CASCADE)
+    related_concepts = models.ManyToManyField(Concept)
+    f_id = models.CharField(max_length=20)
+    s_id = models.CharField(max_length=20)
+    f_is_s = models.CharField(max_length=20)
+    s_is_f = models.CharField(max_length=20)
+
+
+
+
+
+

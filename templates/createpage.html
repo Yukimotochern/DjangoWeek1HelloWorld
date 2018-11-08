@@ -1,29 +1,86 @@
 {% extends 'base.html' %}
 {% block main_content %}
-<h1>This is createpage</h1>
+<h1>&nbsp 方形知識庫</h1>
 <br>
 <div class="row">
   <div class="col-lg-6">
       <h2>  &nbsp Here's Your Concepts</h2>
       <br>
+      {% if error_message %} <p><strong>{{error_message_concept}}</strong></p> {% endif %}
       <div class="list-group">
-        <a href="#" class="list-group-item" style="text-decoration: none">
-            <input class="list-group-item-heading form-control"/>
-            <br>
-            <textarea class="list-group-item-text form-control" rows="5" id="comment"></textarea>
-            <br>
-            <button class="btn btn-success right" style="float:right">確認修改</button>
-        </a>
-        <a class="list-group-item" style="text-decoration: none; color: black">
-          <h4 class="">Second List Group Item Heading<span style="float: right" class="btn btn-link">編輯</span></h4>
-            <p class="list-group-item-text">\[\sin\]This is a try \(\sin x^2\).<br> Typing \(\LaTeX\) is a lot of fun.
-            \[\nabla \times E = B\]
-            </p>
-        </a>
-        <a href="#" class="list-group-item" style="color: black">
-          <h4 class="list-group-item-heading">Third List Group Item Heading<span style="float: right" class="btn btn-link">編輯</span></h4>
-          <p class="list-group-item-text">List Group Item Text</p>
-        </a>
+          {% if concept %}
+            {% for co in concept %}
+                {% if edit_id %}
+                    {% if edit_id == co.id %}
+                    <p>{{edit_id}} & {{co.id}}</p>
+                    {% endif %}
+                    {% if edit_id == co.id|slugify %}
+                        <a class="list-group-item" style="text-decoration: none">
+                            <form action="{% url 'editconcept_act' co.id %}" method="post">
+                              {% csrf_token %}
+                                <input type="text" name="newtitle" value="{{co.title}}" class="list-group-item-heading form-control"/>
+                                <br>
+                                <textarea name="newcontent" class="list-group-item-text form-control" rows="5">{{co.content}}</textarea>
+                                <br>
+                                <button type="submit" class="btn btn-success right" style="float:right">儲存修改</button>
+                             </form>
+                        </a>
+                    {% else %}
+                        <a class="list-group-item" style="text-decoration: none; color: black">
+                            <h4 class="list-group-item-heading">
+                                {{co.title}}
+
+
+                                <form style="display: inline" method="post">
+                                    {% csrf_token %}
+                                        <button type="submit" formaction="{% url 'editconcept' co.id%}" style="float: right" class="btn btn-link">
+                                            編輯
+                                        </button>
+                                        <button type="submit" formaction="{% url 'deleteconcept' co.id %}" style="float: right" class="btn btn-link">
+                                            刪除
+                                        </button>
+                                </form>
+                            </h4>
+                            <p class="list-group-item-text">
+                                {{co.content}}
+                            </p>
+                        </a>
+                    {% endif %}
+
+                {% else %}
+                <a class="list-group-item" style="text-decoration: none; color: black">
+                    <h4 class="list-group-item-heading">
+                        {{co.title}}
+
+
+                        <form style="display: inline" id="conceptmod" method="post">
+                            {% csrf_token %}
+                                <button type="submit" formaction="{% url 'editconcept' co.id%}" style="float: right" class="btn btn-link">
+                                    編輯
+                                </button>
+                                <button type="submit" formaction="{% url 'deleteconcept' co.id %}" style="float: right" class="btn btn-link">
+                                    刪除
+                                </button>
+                        </form>
+                    </h4>
+                    <p class="list-group-item-text">
+                        {{co.content}}
+                    </p>
+                    {% endif %}
+                </a>
+
+            {% endfor %}
+          {% endif %}
+          <a class="list-group-item" style="text-decoration: none">
+              <form id="newconcept" action="{% url 'newconcept' %}" method="post">
+                  {% csrf_token %}
+                  <input type="text" name="newtitle" id="newtitle" placeholder="概念標題" class="list-group-item-heading form-control"/>
+                  <br>
+                  <textarea form="newconcept" id="newcontent" name="newcontent" placeholder="概念細節，輸入看看\[\sin\]" class="list-group-item-text form-control" rows="5"></textarea>
+                  <br>
+                  <button class="btn btn-success right" style="float:right">新增概念</button>
+              </form>
+          </a>
       </div>
   </div>
   <div class="col-lg-6">
