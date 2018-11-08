@@ -1,3 +1,8 @@
 button.account{
     color: white;
 }
+
+button.right {
+    float: right;
+    padding: 10px;
+}
