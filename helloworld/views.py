@@ -66,7 +66,7 @@ def deleteconcept(request, concept_id):
 
 def editconcept(request, concept_id):
     edit_id = concept_id
-    concept = sorted(Concept.objects.all(), key=id)
+    concept = Concept.objects.all().order_by('id')
     relation = Relation.objects.all()
     relation_entry = RelationEntry.objects.all()
     return render(request, 'createpage.html', locals())
@@ -80,7 +80,7 @@ def editconcept_act(request, concept_id):
         to_edit.save()
     except:
         pass
-    concept = sorted(Concept.objects.all(), key=id)
+    concept = Concept.objects.all().order_by('id')
     relation = Relation.objects.all()
     relation_entry = RelationEntry.objects.all()
     return render(request, 'createpage.html', locals())

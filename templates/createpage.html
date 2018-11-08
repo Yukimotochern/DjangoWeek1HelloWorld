@@ -3,7 +3,7 @@
 <h1>&nbsp 方形知識庫</h1>
 <br>
 <div class="row">
-  <div class="col-lg-6">
+  <div class="col-lg-7">
       <h2>  &nbsp Here's Your Concepts</h2>
       <br>
       {% if error_message %} <p><strong>{{error_message_concept}}</strong></p> {% endif %}
@@ -11,9 +11,6 @@
           {% if concept %}
             {% for co in concept %}
                 {% if edit_id %}
-                    {% if edit_id == co.id %}
-                    <p>{{edit_id}} & {{co.id}}</p>
-                    {% endif %}
                     {% if edit_id == co.id|slugify %}
                         <a class="list-group-item" style="text-decoration: none">
                             <form action="{% url 'editconcept_act' co.id %}" method="post">
@@ -83,7 +80,7 @@
           </a>
       </div>
   </div>
-  <div class="col-lg-6">
+  <div class="col-lg-5">
         <h2> &nbsp Here's the Connections</h2>
       <br>
       <div class="list-group">
@@ -107,34 +104,3 @@
 {% endblock %}
 
 
-<!--<div class="panel-group">-->
-    <!--<div class="panel panel-default">-->
-      <!--<div class="panel-heading">Panel with panel-default class</div>-->
-      <!--<div class="panel-body">Panel Content</div>-->
-    <!--</div>-->
-
-    <!--<div class="panel panel-primary">-->
-      <!--<div class="panel-heading">Panel with panel-primary class</div>-->
-      <!--<div class="panel-body">Panel Content</div>-->
-    <!--</div>-->
-
-    <!--<div class="panel panel-success">-->
-      <!--<div class="panel-heading">Panel with panel-success class</div>-->
-      <!--<div class="panel-body">Panel Content</div>-->
-    <!--</div>-->
-
-    <!--<div class="panel panel-info">-->
-      <!--<div class="panel-heading">Panel with panel-info class</div>-->
-      <!--<div class="panel-body">Panel Content</div>-->
-    <!--</div>-->
-
-    <!--<div class="panel panel-warning">-->
-      <!--<div class="panel-heading">Panel with panel-warning class</div>-->
-      <!--<div class="panel-body">Panel Content</div>-->
-    <!--</div>-->
-
-    <!--<div class="panel panel-danger">-->
-      <!--<div class="panel-heading">Panel with panel-danger class</div>-->
-      <!--<div class="panel-body">Panel Content</div>-->
-    <!--</div>-->
-  <!--</div>-->
